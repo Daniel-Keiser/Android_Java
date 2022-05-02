@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to my first App"
+        android:id="@+id/txtTitulo"
+        android:textColor="@color/white"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aqui você encontra tudo o que eu não criei ainda!"
+        android:id="@+id/txtSubTitulo"
+        android:textSize="12dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="0dp"/>
+
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="87dp"
-        android:text="Button"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="44dp" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/listUser"
+        android:textColor="@color/black"
+
+        android:layout_below="@+id/txtSubTitulo"
+
+        />
+
+
+
+</LinearLayout>

@@ -30,6 +30,7 @@
         android:layout_marginTop="40dp"
         android:hint="Senha"
         android:textAlignment="center"
+        android:inputType="textPassword"
         android:textColorHint="@color/white" />
 
 
